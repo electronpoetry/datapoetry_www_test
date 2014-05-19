@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Data Poetry Group</title>
+	<meta name="description" content="We are specialists in crafting data analytics solutions. Applying statistics and machine learning, we generate actionable data-driven insights.">
+	<meta name="keywords" content="data analytics, marketing, loyalty, sales, communications, edm, decisions, optimisation, data science, modeling, statistics, machine learning, solutions">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+		}
+
+		.mast {
+			background: rgba(255,255,255,0.75);
+			width: 100%;
+			position: absolute;
+			z-index: 100;
+		}
+
+		.hero {
+			background-image: url('splash1.jpg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 600px;
+		}
+
+		.hero-statement {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			padding-top: 12em;
+		}
+		
+		.centered-container {
+			max-width: 1200px;
+			box-sizing: border-box;
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		.hero-statement h2 {
+			word-spacing: 0.15em;
+			font-size: 3.5em;
+			font-weight: 300;
+			line-height: 1.15;
+			color: white;
+			text-shadow: 1px 1px rgba(0,0,0,0.8);
+		}
+
+		.analyses {
+			width: 100%;
+			background-color: white;
+			font-size: 2em;
+			padding: 3em 0;
+		}
+		
+		.analyses h2 {
+			font-size: 1.2em;
+			font-weight: 400;
+			color: black;
+			margin: 0;
+		}
+		
+		.analyses a {
+			font-weight: 300;
+			color: black;
+			text-decoration: underline;
+		}
+		
+		/*
+			SLIDE CLASSES
+		*/
+	
+		#slides div {
+			float: left;
+			margin: 0 50px;
+		}
+
+		.analyses .arrow {
+			width: 40px;
+			height: 80px;
+			background-color: black;
+			display: block;
+			text-align: center;
+			margin: 100px 0;
+			line-height: 80px;
+			position: absolute;
+			z-index: 100;
+		}
+		
+		.analyses .arrow a {
+			color: white;
+			text-decoration: none;
+		}	
+	
+		.analyses.prev {
+			left: 0;
+		}
+		
+		.analyses .next {
+			right: 0;
+		}
+		
+		.pagination {
+			margin: 24px auto 0;
+			width: 100px;
+		}
+
+		.pagination a {
+			display:block;
+			width:12px;
+			height:0;
+			padding-top:12px;
+			margin: 0 4px;
+			background-image:url('pagination.png');
+			background-position:0 0;
+			float:left;
+			overflow:hidden;
+		}
+
+		.pagination a.selected {
+			background-position:0 -12px;
+		}
+	
+		/*
+			END SLIDE CLASSES
+		*/
+		
+		.lead {
+			color: red;
+		}
+
+		.analysis-desc {
+			font-weight: 300;
+		}
+
+		.footer {
+			background-color: black;
+			color: white;
+			padding: 4em 0 1em;
+		}
+
+		.footer a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.footer a:hover {
+			text-decoration: underline;
+		}
+
+		.footer-logo {
+			float: left;
+		}
+
+		.footer h3 {
+			line-height: 1;
+			font-size: 1.2em;
+			margin-top: 12px;
+		}
+
+		.ROC {
+			border-left: solid 2px red;
+			border-top: solid 2px red;
+			padding-top: 0.2em;
+			padding-left: 0.2em;
+			padding-bottom: 0.2em;
+		}
+
+		.footer-contact {
+			position: absolute;
+			left: 50%;
+		}
+			
+		.clear {
+			clear: both;
+		}
+		
+		.copyr {
+			width: 100%;
+			margin: 6em 0 0;
+			padding: 0;
+			text-align: center;
+			font-size: 0.6em;
+		}
+	</style>
+</head>
+<body>
+	<div class="mast">
+		<div class="centered-container">
+			<img class="mast_logo" src="mast_logo.png" alt="The Data Poetry Group logo" />
+		</div>
+	</div>
+	<div class="hero">
+	</div>
+	<div class="hero-statement">
+		<div class="centered-container">
+			<h2>DATA MADE EVOCATIVE.</h2>
+		</div>
+	</div>
+	<div class="analyses">
+		<div class="prev arrow"><a href="#">&lt;</a></div>
+		<div class="next arrow"><a href="#">&gt;</a></div>
+		<div class="centered-container">
+			<div id="slides">
+				<div>
+					<h2 class="ROC">TARGET COMMUNICATIONS</h2>
+					<p class="lead">Use analytics to reach your customers</p>
+					<p class="analysis-desc">Customers are confronted with a deluge of irrelevant messages every day. 
+					Use analytics to cut through the confusion and gain credibility with individually-tailored 
+					messages that get to the heart of what each customer cares about.</p>
+					<p><a href="mailto:info@datapoetry.com">Ask us how.</a></p>
+				</div>
+				<div>
+					<h2 class="ROC">DRIVE SALES</h2>
+					<p class="lead">Make optimal marketing and pricing decisions</p>
+					<p class="analysis-desc">Traditional business intelligence tells you about the past. 
+					Predictive analytics lets you take control of the future by connecting causes to effects, 
+					showing you how to shape your decisions to achieve maximum ROI.</p>
+					<p><a href="mailto:info@datapoetry.com">Ask us how.</a></p>
+				</div>
+				<div>
+					<h2 class="ROC">GENERATE LOYALTY</h2>
+					<p class="lead">Understand your customers deeply through their interactions</p>
+					<p class="analysis-desc">There's always a narrative behind what your customers do, but
+					you don't get the full picture with just traditional business intelligence and simple segmentation.
+					Data analytics draws out the stories from transaction records and loyalty program data 
+					at an individual level, giving you maximum insight into how to win your customers'
+					hearts and minds.</p>
+					<p><a href="mailto:info@datapoetry.com">Ask us how.</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="pagination"></div>
+	</div>
+	<div class="footer">
+		<div class="centered-container">
+			<div class="footer-logo">
+				<img src="footer_logo.png" alt="The Data Poetry Group logo" />
+			</div>
+			<div class="footer-contact">
+				<h3 class="ROC">CONTACT US</h3>
+				<p><a href="mailto:info@datapoetry.com">info@datapoetry.com</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<p class="copyr">Copyright &copy; 2012 The Data Poetry Group.<br />Original stock photo by Karen "The Pack" (via <a href="http://www.flickr.com/photos/thepack/1752254341">Flickr</a>) adapted under Creative Commons Attribution 2.0 Generic license.</p>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="jquery.carouFredSel-6.1.0-packed.js"></script>
+	<script>
+		$(function(){
+			/*	CarouFredSel: a circular, responsive jQuery carousel.
+				Configuration created by the "Configuration Robot"
+				at caroufredsel.frebsite.nl
+			*/
+			$("#slides").carouFredSel({
+				responsive: true,
+				width: "100%",
+				height: "auto",
+				items: {
+					width: 1200,
+					visible: 1,
+					height: "auto"
+				},
+				scroll: {
+					pauseOnHover: true
+				},
+				auto: 10000,
+				prev		: {
+					button		: ".prev",
+					key			: "left"
+				},
+				next		: {
+					button		: ".next",
+					key			: "right"
+				},
+
+				pagination: ".pagination"
+			});
+		});
+	</script>
+</body>
+</html>
