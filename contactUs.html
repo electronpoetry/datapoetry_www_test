@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Data Poetry Group</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+		}
+
+		.mast {
+			background: rgba(255,255,255,0.75);
+			width: 100%;
+			position: absolute;
+			z-index: 100;
+		}
+
+		.hero {
+			background-image: url('splash1.jpg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 600px;
+		}
+
+		.hero-statement {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			padding-top: 12em;
+		}
+
+		.centered-container {
+			max-width: 1200px;
+			box-sizing: border-box;
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		.hero-statement h2 {
+			word-spacing: 0.15em;
+			font-size: 3.5em;
+			font-weight: 300;
+			line-height: 1.15;
+			color: white;
+			text-shadow: 1px 1px rgba(0,0,0,0.8);
+		}
+
+		.contact-form {
+			width: 100%;
+			background-color: white;
+			font-size: 2em;
+			padding: 1em 0;
+		}
+
+		.lead {
+			color: red;
+		}
+
+		.footer {
+			background-color: black;
+			color: white;
+			padding: 4em 0 1em;
+		}
+
+		.footer a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.footer a:hover {
+			text-decoration: underline;
+		}
+
+		.footer-logo {
+			float: left;
+		}
+
+		.footer h3 {
+			line-height: 1;
+			font-size: 1.2em;
+			margin-top: 12px;
+		}
+
+		.ROC {
+			border-left: solid 2px red;
+			border-top: solid 2px red;
+			padding-top: 0.2em;
+			padding-left: 0.2em;
+			padding-bottom: 0.2em;
+		}
+
+		.footer-contact {
+			position: absolute;
+			left: 50%;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.copyr {
+			width: 100%;
+			margin: 6em 0 0;
+			padding: 0;
+			text-align: center;
+			font-size: 0.6em;
+		}
+	</style>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30241533-2', 'dropboxusercontent.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+	mixpanel.init("fd201d5cf08054d2a8ba1b7a7e097f83");</script><!-- end Mixpanel -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
+<script src="jquery.min.js"></script>
+<script>
+	$(function() {
+    	$(".trail").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			mixpanel.track("Link clicked: "+e.target.id);
+			alert(e.target.id)
+		});
+	});	
+</script>
+</head>
+<body>
+	<div class="mast">
+		<div class="centered-container">
+			<a href="index.html"><img class="mast_logo" src="mast_logo.png" alt="The Data Poetry Group logo" /></a>
+		</div>
+	</div>
+	<div class="hero">
+	</div>
+	<div class="hero-statement">
+		<div class="centered-container">
+			<a href="index.html" style="text-decoration:none"><h2>DATA MADE EVOCATIVE.</h2></a>
+		</div>
+	</div>
+	<div class="contact-form">
+		<script type="text/javascript" src="http://form.jotform.us/jsform/41306208167146"></script>
+	</div>
+	<div class="footer">
+		<div class="centered-container">
+			<div class="footer-logo">
+				<img src="footer_logo.png" alt="The Data Poetry Group logo" />
+			</div>
+			<div class="footer-contact">
+				<h3 class="ROC">CONTACT US</h3>
+				<p><a id="trail-contact-us" class="trail" href="mailto:info@datapoetry.com">info@datapoetry.com</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<p class="copyr">Copyright &copy; 2012 The Data Poetry Group.<br />Original stock photo by Karen "The Pack" (via <a href="http://www.flickr.com/photos/thepack/1752254341">Flickr</a>) adapted under Creative Commons Attribution 2.0 Generic license.</p>
+	</div>
+	<script>
+		mixpanel.track("Contact Us");
+	</script>
+</body>
+</html>
