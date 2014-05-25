@@ -5,34 +5,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<style type="text/css">
-		.ROC {
-			border-left: solid 2px red;
-			border-top: solid 2px red;
-			padding-top: 0.2em;
-			padding-left: 0.2em;
-			padding-bottom: 0.2em;
-		}
-
-		.analyses {
-			width: 100%;
-			background-color: white;
-			font-size: 2em;
-			padding: 3em 0;
-		}
-
-		.analyses h2 {
-			font-size: 1.2em;
-			font-weight: 400;
-			color: black;
-			margin: 0;
-		}
-
-		.analyses a {
-			font-weight: 300;
-			color: black;
-			text-decoration: underline;
-		}
-
 		/*
 			SLIDE CLASSES
 		*/
@@ -42,7 +14,7 @@
 			margin: 0 50px;
 		}
 
-		.analyses .arrow {
+		.main-content .arrow {
 			width: 40px;
 			height: 80px;
 			background-color: black;
@@ -54,23 +26,18 @@
 			z-index: 100;
 		}
 
-		.analyses .arrow a {
+		.main-content .arrow a {
 			color: white;
 			text-decoration: none;
 		}	
 
-		.analyses.prev {
+		.main-content .prev {
 			left: 0;
 		}
 
-		.analyses .next {
+		.main-content .next {
 			right: 0;
 		}
-
-		.analysis-desc {
-			font-weight: 300;
-		}
-
 
 		.pagination {
 			margin: 24px auto 0;
@@ -136,43 +103,40 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElemen
 			<a href="index.html" style="text-decoration:none"><h2>DATA MADE EVOCATIVE.</h2></a>
 		</div>
 	</div>
-	<div class="analyses">
+	<div class="main-content">
 		<div class="prev arrow"><a href="#">&lt;</a></div>
 		<div class="next arrow"><a href="#">&gt;</a></div>
 		<div class="centered-container">
 			<div id="slides">
-				<div class="text-and-picture">
-					<img src="footer_logo.png" class="picture"/>
-					<div class="text-by-picture">		
-					<h2 class="ROC">TARGET COMMUNICATIONS</h2>
+				<div>
+					<h2 class="section-title">TARGET COMMUNICATIONS</h2>
 					<p class="lead">Reach your customers with maximum relevance</p>
-					<p class="analysis-desc">Every day, your customers are confronted with a deluge of messages
+					<p class="section-text">Every day, your customers are confronted with a deluge of messages
 					competing for their attention. Use data analytics to cut through the confusion and gain
 					credibility with messages tailored individually to what each customer cares about.</p>
 					<p><a id="trail-target-communications" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
-				</div>
 				<div>
-					<h2 class="ROC">DRIVE SALES</h2>
+					<h2 class="section-title">DRIVE SALES</h2>
 					<p class="lead">Make optimal marketing and pricing decisions</p>
-					<p class="analysis-desc">Traditional business intelligence tells you about the past.
+					<p class="section-text">Traditional business intelligence tells you about the past.
 					Predictive analytics gives you a window into the future, connecting causes to effects,
 					and showing you how to shape your decisions to achieve maximum ROI.</p>
 					<p><a id="trail-drive-sales" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
 				<div>
-					<h2 class="ROC">BUILD LOYALTY</h2>
+					<h2 class="section-title">BUILD LOYALTY</h2>
 					<p class="lead">Gain deep insight into your customers’ behaviour</p>
-					<p class="analysis-desc">There’s always a narrative behind what your customers do, but
+					<p class="section-text">There’s always a narrative behind what your customers do, but
 					traditional business intelligence and basic segmentation don't give you the full picture.
 					Data analytics draws out the individual stories from transaction records and loyalty
 					program data, giving you maximum insight into how to win your customers' hearts and minds.</p>
 					<p><a id="trail-generate-loyalty" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
 				<div>
-					<h2 class="ROC">MEASURE LIFETIME VALUE</h2>
+					<h2 class="section-title">MEASURE LIFETIME VALUE</h2>
 					<p class="lead">Know what each customer is worth through time</p>
-					<p class="analysis-desc">How much customers bring in for your business now and in the future
+					<p class="section-text">How much customers bring in for your business now and in the future
 					is a critical input to planning as well as your marketing and customer acquisition activity.
 					Data analytics gives you a high-resolution view of what individual customers are worth to
 					you throughout their lifecycle.</p>
@@ -180,9 +144,9 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElemen
 					<p><a id="trail-measure-lifetime-value" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
 				<div>
-					<h2 class="ROC">EVALUATE PROMOTIONS</h2>
+					<h2 class="section-title">EVALUATE PROMOTIONS</h2>
 					<p class="lead">Determine exactly what each of your offers and discounts are doing for you</p>
-					<p class="analysis-desc">There are many creative and innovative ways to reach out to customers
+					<p class="section-text">There are many creative and innovative ways to reach out to customers
 					and entice them to shop, but it can be difficult to untangle the short-term and long-term
 					impact of each one. Data analytics helps measure the effects of your promotions and find out
 					which are most effective for which customers.</p>
@@ -190,9 +154,9 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElemen
 					<p><a id="trail-evaluate-promotions" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
 				<div>
-					<h2 class="ROC">DEPLOY ANALYTICS</h2>
+					<h2 class="section-title">DEPLOY ANALYTICS</h2>
 					<p class="lead">Make data-driven decision-making a core competency</p>
-					<p class="analysis-desc">The data revolution is underway, and every click, like, and purchase
+					<p class="section-text">The data revolution is underway, and every click, like, and purchase
 					can be harnessed to make your products more relevant to your customers. Big Data has a
 					reputation for being expensive and time-consuming, but that doesn't have to be the case.</p>
 					<p><a id="trial-lifetime-value-article" class="trail" href="#">Read our article on the fundamental concepts of data-driven personalisation.</a></p>
@@ -208,7 +172,7 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElemen
 				<img src="footer_logo.png" alt="The Data Poetry Group logo" />
 			</div>
 			<div class="footer-contact">
-				<h3 class="ROC">CONTACT US</h3>
+				<h3 class="section-title">CONTACT US</h3>
 				<p><a id="trail-contact-us" class="trail" href="mailto:info@datapoetry.com">info@datapoetry.com</a></p>
 			</div>
 			<div class="clear"></div>

@@ -43,8 +43,40 @@
 			text-shadow: 1px 1px rgba(0,0,0,0.8);
 		}
 
+		.main-content {
+			width: 100%;
+			background-color: white;
+			font-size: 2em;
+			padding: 3em 0;
+		}
+
+		.main-content h2 {
+			font-size: 1.2em;
+			font-weight: 400;
+			color: black;
+			margin: 0;
+		}
+
+		.main-content a {
+			font-weight: 300;
+			color: black;
+			text-decoration: underline;
+		}
+
+		.section-title {
+			border-left: solid 2px red;
+			border-top: solid 2px red;
+			padding-top: 0.2em;
+			padding-left: 0.2em;
+			padding-bottom: 0.2em;
+		}
+
 		.lead {
 			color: red;
+		}
+
+		.section-text {
+			font-weight: 300;
 		}
 
 		.footer {
