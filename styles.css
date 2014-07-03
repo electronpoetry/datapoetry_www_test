@@ -4,6 +4,15 @@
 			font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
 		}
 
+		.logo {
+			height: 1.3em;
+			width: 1.3em;
+			padding-top: 0.2em;
+			border-left: red 2px solid;
+			border-top: red 2px solid;
+			display: inline-block;
+		}
+
 		.mast {
 			background: rgba(255,255,255,0.75);
 			width: 100%;
@@ -64,8 +73,6 @@
 		}
 
 		.section-title {
-			border-left: solid 2px red;
-			border-top: solid 2px red;
 			padding-top: 0.2em;
 			padding-left: 0.2em;
 			padding-bottom: 0.2em;
@@ -94,10 +101,6 @@
 			text-decoration: underline;
 		}
 
-		.footer-logo {
-			float: left;
-		}
-
 		.footer h3 {
 			line-height: 1;
 			font-size: 1.2em;
@@ -105,8 +108,9 @@
 		}
 
 		.footer-contact {
+			float: left;
 			position: absolute;
-			left: 50%;
+			/* left: 50%; */
 		}
 
 		.clear {
