@@ -99,40 +99,35 @@
 		<div class="next arrow"><a href="#">&gt;</a></div>
 		<div class="centered-container">
 			<div id="slides">
-				<div>
+				<div id="slide-personalise-interactions">
 					<h2 class="section-title"><span class="logo">&nbsp;</span>PERSONALISE INTERACTIONS</h2>
 					<p class="lead">Provide individually-tailored service to your customers</p>
-					<p class="section-text">Personalisation supports every step of the purchase process - more effective marketing, more accurate recommendations, higher conversion rates, and larger margins. Data analytics makes this possible, by combining specific and general insights about your customers, and enabling you to apply the most effective approach to each one.</p>
-					<p><a id="trail-personalisation-article" class="trail" href="personalisation.html">Read our white paper on personalisation.</a></p>
-					<p><a id="trail-personalise-interactions" class="trail" href="contactUs.html">Ask us how.</a></p>
+					<p class="section-text">Sophisticated tech-savvy consumers and online competition has made the retail environment even more challenging. Harnessing demographic information, shopping histories and online activity logs allows you to deliver personalised service that gives your business an edge at every step of the purchase process: more effective marketing, more accurate recommendations, higher conversion rates, and wider margins.</p>
+					<p><a id="personalisation-article" class="trail" href="content/PredictiveDataAnalyticsPersonalisation.pdf">Read our white paper on personalisation.</a></p>
 				</div>
-				<div>
+				<div id="slide-drive-sales">
 					<h2 class="section-title"><span class="logo">&nbsp;</span>DRIVE SALES</h2>
 					<p class="lead">Optimise marketing and pricing decisions</p>
 					<p class="section-text">Predictive analytics goes beyond traditional backward-looking business intelligence and directly models future situations. Quantify how your prices and promotions impact short- and long-term customer shopping behaviour, and shape your decisions to achieve maximum ROI.</p>
-					<p><a id="trial-promotion-impact-article" class="trail" href="promotionImpact.html">Find out more about measuring the economic impact of promotions.</a></p>
-					<p><a id="trail-drive-sales" class="trail" href="contactUs.html">Ask us how.</a></p>
+					<p><a id="promotion-impact-link" class="trail" href="promotionImpact.html">Find out more about measuring the economic impact of promotions.</a></p>
 				</div>
-								<div>
+				<div id="slide-measure-ltv">
 					<h2 class="section-title"><span class="logo">&nbsp;</span>MEASURE LIFETIME VALUE</h2>
 					<p class="lead">Monitor customer value over time</p>
 					<p class="section-text">Customer lifetime value is a critical input to business planning, marketing, and acquisition activity. Data analytics gives you a high-resolution view of what individual customers are worth to you, and allows you to track how that changes.</p>
-					<p><a id="trial-lifetime-value-article" class="trail" href="lifetimeValue.html">Find out more about measuring lifetime value.</a></p>
-					<p><a id="trail-measure-lifetime-value" class="trail" href="contactUs.html">Ask us how.</a></p>
+					<p><a id="lifetime-value-link" class="trail" href="lifetimeValue.html">Find out more about measuring lifetime value.</a></p>
 				</div>
-				<div>
+				<div id="slide-target-communications">
 					<h2 class="section-title"><span class="logo">&nbsp;</span>TARGET COMMUNICATIONS</h2>
 					<p class="lead">Message with maximum relevance</p>
 					<p class="section-text">Every day, your customers are barraged with a deluge of communications
 					competing for their attention. Use data analytics to cut through the crowd and gain
 					credibility with messages tailored to what each individual cares about.</p>
-					<p><a id="trail-target-communications" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
-				<div>
+				<div id="slide-build-loyalty">
 					<h2 class="section-title"><span class="logo">&nbsp;</span>BUILD LOYALTY</h2>
 					<p class="lead">Gain deep insight into your customers' behaviour</p>
 					<p class="section-text">There's a story behind every customer, but traditional segmentation approaches don't give you the full picture. Data analytics draws a wealth of information from transaction records, website navigation, and loyalty program data, providing insight into winning hearts and minds.</p>
-					<p><a id="trail-build-loyalty" class="trail" href="contactUs.html">Ask us how.</a></p>
 				</div>
 			</div>
 		</div>
@@ -142,7 +137,7 @@
 		<div class="centered-container">
 			<div class="footer-contact">
 				<h3 class="section-title"><span class="logo">&nbsp;</span>CONTACT US</h3>
-				<p><a id="trail-contact-us" class="trail" href="mailto:info@datapoetry.com">info@datapoetry.com</a></p>
+				<p class="section-text"><a id="contact-us-link" trail="" href="contactUs.html">Click here</a></p>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -166,7 +161,8 @@
 					height: "auto"
 				},
 				scroll: {
-					pauseOnHover: true
+					pauseOnHover: true,
+					onAfter: function(x) {$("#contact-us-link").attr("trail",$("#slides").children()[0].id);}
 				},
 				auto: 10000,
 				prev: ".prev",
@@ -176,7 +172,11 @@
 		});
 	</script>
 	<script>
-		mixpanel.track("Home");
+		mixpanel.track("Index");
+		mixpanel.track_links("#contact-us-link","Trail"
+		,function(e){
+			return {"trail":e.getAttribute("trail")};
+		});
 	</script>
 </body>
 </html>

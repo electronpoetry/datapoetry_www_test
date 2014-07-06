@@ -17,6 +17,20 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
 <script src="jquery.min.js"></script>
 <script src="trail.js"></script>
+
+<script src="js/prototype.js?v=3.2.2571" type="text/javascript"></script>
+<script src="js/vendor/json2.js?v=3.2.2571" type="text/javascript"></script>
+<script src="js/protoplus.js?v=3.2.2571" type="text/javascript"></script>
+<script src="js/protoplus-ui-form.js?v=3.2.2571" type="text/javascript"></script>
+<script src="js/jotform.js?v=3.2.2571" type="text/javascript"></script>
+<script src="js/calendarview.js?v=3.2.2571" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      $('input_19').hint('John Smith');
+      $('input_16').hint('myname@example.com');
+   });
+</script>
+
 </head>
 <body>
 	<div class="mast">
@@ -24,23 +38,52 @@
 			<a href="index.html"><img class="mast_logo" src="mast_logo.png" alt="The Data Poetry Group logo" /></a>
 		</div>
 	</div>
-	<div class="hero">
+	<div class="mast-hero">
 	</div>
-	<div class="hero-statement">
+<!--	<div class="hero-statement">
 		<div class="centered-container">
 			<a href="index.html" style="text-decoration:none"><h2>DATA MADE EVOCATIVE.</h2></a>
 		</div>
-	</div>
+	</div> -->
 	<div class="main-content">
-		<script type="text/javascript" src="http://form.jotform.us/jsform/41306208167146"></script>
+		<div class="centered-container">
+			<form class="jotform-form" action="http://submit.jotform.us/submit.php" method="post" name="form_41306208167146" id="41306208167146" accept-charset="utf-8">
+  				<input type="hidden" name="formID" value="41306208167146" />
+		  			<h2 class="section-title">
+						<span class="logo">&nbsp;</span>
+                		CONTACT US
+          			</h2>
+          			<p class="section-text">
+            			Please fill out this form and we will get in touch with you shortly.
+          			</p>
+	    	    <label class="section-text" id="label_19" for="input_19"> Your Name </label>
+    	    	<div id="cid_19" class="form-input-wide">
+					<input type="text" class=" form-textbox" data-type="input-textbox" id="input_19" name="q19_yourName19" size="50" value="" />
+       			</div>
+				<label class="section-text" id="label_16" for="input_16"> Your E-mail Address </label>
+				<div id="cid_16" class="form-input-wide">
+					<input type="email" class=" form-textbox validate[Email]" id="input_16" name="q16_yourEmail16" size="50" value="" />
+        		</div>
+       			<label class="section-text" id="label_17" for="input_17"> Your Message </label>
+        		<div id="cid_17" class="form-input-wide">
+		          <textarea id="input_17" class="form-textarea" name="q17_yourMessage17" cols="50" rows="9"></textarea>
+        		</div>
+		        <div id="cid_14" class="form-input-wide">
+        			<div class="form-buttons-wrapper">
+            			<button id="input_14" type="submit" class="styled-button">Submit</button>
+					</div>
+				</div>
+  				<input type="hidden" id="simple_spc" name="simple_spc" value="41306208167146" />
+  				<script type="text/javascript">
+  					document.getElementById("si" + "mple" + "_spc").value = "41306208167146-41306208167146";
+  				</script>
+			</form><img src="//tracking.jotform.com/form/41306208167146" style="display:none" />
+		</div>
 	</div>
 	<div class="footer">
 		<div class="centered-container">
-			<div class="footer-logo">
-				<img src="footer_logo.png" alt="The Data Poetry Group logo" />
-			</div>
 			<div class="footer-contact">
-				<h3 class="ROC">CONTACT US</h3>
+				<h3 class="section-title"><span class="logo">&nbsp;</span>Email</h3>
 				<p><a id="trail-contact-us" class="trail" href="mailto:info@datapoetry.com">info@datapoetry.com</a></p>
 			</div>
 			<div class="clear"></div>
@@ -48,7 +91,7 @@
 		<p class="copyr">Copyright &copy; 2012 The Data Poetry Group.<br />Original stock photo by Karen "The Pack" (via <a href="http://www.flickr.com/photos/thepack/1752254341">Flickr</a>) adapted under Creative Commons Attribution 2.0 Generic license.</p>
 	</div>
 	<script>
-//		mixpanel.track("Contact Us");
+		mixpanel.track("ContactUs");
 	</script>
 </body>
 </html>
