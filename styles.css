@@ -64,6 +64,11 @@
 			text-shadow: 1px 1px rgba(0,0,0,0.8);
 		}
 
+		.chart {
+			width: 80%;
+			max-width: 1000px;
+		}
+
 		.main-content {
 			width: 100%;
 			background-color: white;
